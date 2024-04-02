@@ -1,0 +1,40 @@
+@import '../fonts', '../normalize';
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 56px 77px 97px 79px;
+    .footer__contacts{
+        display: flex;
+        flex-direction: column;
+        gap: 27px;
+        font-size: 20pt;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: regular;
+        letter-spacing: 6.5%;
+        color: #000000;
+        div{
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+    }
+    .footer__media{
+        .footer__media-con{
+            display: flex;
+            gap: 25px;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    .footer__address{
+        font-size: 20pt;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: regular;
+        letter-spacing: 3%;
+        line-height: 150%;
+        color: #000000;
+    }
+}

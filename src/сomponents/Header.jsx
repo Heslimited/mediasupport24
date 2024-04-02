@@ -1,9 +1,10 @@
-import camera from '../assets/camera.svg'
-import phone from '../assets/phone.svg'
-import telegram from '../assets/telegram.svg'
-import lines from '../assets/lines.svg'
-import sololine from '../assets/sololine.svg'
+import camera from '../assets/svg/camera.svg'
+import phone from '../assets/svg/phone.svg'
+import telegram from '../assets/svg/telegram.svg'
+import lines from '../assets/svg/lines.svg'
+import sololine from '../assets/svg/sololine.svg'
 
+import '../css/blocks/Header.scss'
 
 export default function Header() {
     return (

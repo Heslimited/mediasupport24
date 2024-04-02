@@ -1,17 +1,17 @@
-import monitor from '../assets/monitor.svg'
-import rocket from '../assets/rocket.svg'
-import diagram from '../assets/diagram.svg'
-import cloud from '../assets/cloud.svg'
-import fannel from '../assets/fannel.svg'
-import SMM from '../assets/SMM.svg'
+import monitor from '../assets/svg/monitor.svg'
+import rocket from '../assets/svg/rocket.svg'
+import diagram from '../assets/svg/diagram.svg'
+import cloud from '../assets/svg/cloud.svg'
+import fannel from '../assets/svg/fannel.svg'
+import SMM from '../assets/svg/SMM.svg'
 
-import AlexFitness from '../assets/Alex-Fitness.svg'
-import LogoACB from '../assets/logo-acb.svg'
-import LogoAKB from '../assets/logoakb.svg'
-import LogoXS from '../assets/logo-xs.svg'
+import AlexFitness from '../assets/svg/Alex-Fitness.svg'
+import LogoACB from '../assets/svg/logo-acb.svg'
+import LogoAKB from '../assets/svg/logoakb.svg'
+import LogoXS from '../assets/svg/logo-xs.svg'
 
-import VectorLeft from '../assets/VectorLeft.svg'
-import VectorRight from '../assets/VectorRight.svg'
+import VectorLeft from '../assets/svg/VectorLeft.svg'
+import VectorRight from '../assets/svg/VectorRight.svg'
 
 import '../css/blocks/Main.scss'
 
@@ -151,14 +151,39 @@ export default function MainPage () {
                     <img src={LogoXS} alt="XS logo" />
                 </div>
                 <div className="review">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venenatis dolor risus purus, id massa aenean. Amet eget ornare ut urna accumsan tellus. Lorem commodo enim facilisi a. Pellentesque pharetra pretium vestibulum, non scelerisque tempus amet sollicitudin.</p>
-                    <div>
-                        <img src></img>
-                        <h2>Руководитель сервиса Шишкин Лес</h2>
+                    <p className="review-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venenatis dolor risus purus, id massa aenean. Amet eget ornare ut urna accumsan tellus. Lorem commodo enim facilisi a. Pellentesque pharetra pretium vestibulum, non scelerisque tempus amet sollicitudin.</p>
+                    <div className="review__item">
+                        <div className="review__item-human">
+                            <img src="/src/assets/img/face_circle.png"></img>
+                            <h2>Руководитель сервиса Шишкин Лес</h2>
+                        </div>
+                        <div className="review__item-nav">
+                            <a>
+                                <img src={VectorLeft}  alt="Vector left" />
+                            </a>
+                            <a>
+                                <img src={VectorRight}  alt="Vector right" />
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <h2 className="title">НАШИ ПАРТНЕРЫ</h2>
+            <div className="seventhcon">
+                <div className="seventhcon__item">
+                    <div className="seventhcon__item-text">
+                        <h2>Остались Вопросы?</h2>
+                        <p>Оставьте телефон или почту<br/> и мы свяжемся с вами</p>
+                    </div>
+                    <div>
+                        <form className="seventhcon__item-form">
+                            <input type="email" name="email" id="email" placeholder="Email" required/>
+                            <input type="text" name="name" id="name" placeholder="Имя" required/>
+                            <input type="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="+7     Телефон" required/>
+                        </form>
+                            <button className="seventhcon__item-form-button" type="submit">Заказать звонок</button>
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }
